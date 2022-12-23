@@ -6,8 +6,8 @@
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <properties>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
   <name>Aston_Jenkins_Tomcat Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -27,5 +27,17 @@
   </dependencies>
   <build>
     <finalName>Aston_Jenkins_Tomcat</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+      </plugin>
+    </plugins>
   </build>
 </project>
